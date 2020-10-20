@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Happy Birthday</title>
+</head>
+        <div class="moon">
+            <div class="caracter1"></div>
+            <div class="caracter2"></div>
+            <div class="caracter3"></div>
+        </div>
+        
+
+        <canvas id="canvas"></canvas>
+        <div id="laut"></div>
+        <div id="pantai"></div>
+        
+
+        <img src="https://dl.dropbox.com/s/2k0mtrxc2dqurmh/jumping.png" alt="jumping-people" id="people">
+        <div class="marrywrap" id="marrywrap">
+            <div class="giftbox" id="giftbox">
+                <div class="cover">
+                    <div></div>
+                </div>
+                <div class="box"></div>
+            </div>
+            
+            <div class="icons">
+                <div class="row">
+                    <span>H</span>
+                    <span>A</span>
+                    <span>P</span>
+                    <span>P</span>
+                    <span>Y</span>
+                </div>
+                <div class="row">
+                    <span>B</span>
+                    <span>I</span>
+                    <span>R</span>
+                    <span>T</span>
+                    <span>H</span>
+                    <span>D</span>
+                    <span>A</span>
+                    <span>Y</span>
+                </div>
+                <div class="row">
+                    <span>A</span>
+                    <span>D</span>
+                    <span>E</span>
+                    <span>C</span>
+                    <span>A</span>
+                    <span>H</span>
+                    <span>Y</span>
+                    <span>A</span>
+                    <span>T</span>
+                    <span>I</span>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wpMCd9bOQ8I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div></div>
+        </div>
+
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(".giftbox").click(function(){
+                // $(".giftbox").prop('hidden', true);
+                // $(".botton").prop('hidden', true);
+                alert('Rizki: \nHAPPY BIRTHDAY ADE!! \nSemoga menjadi umur yang berkah:) \nKurangin jejerewetanna de wkwk');
+                alert('Fahmi: \nBarakallah Fiumrik!! \nSukses terus de:) \nTong poho ah seblac acan mah:D');
+                alert('Saepul: \nSelamat ulang tahun Ade!! \nDoa terbaik de:) \nMakan-makan tuh hehe');
+                alert('Andika: \nHapibidi!! \nSemoga sehat teruss,, huuuu uuu:) \ncilok cilok atu de haha');
+                alert('Reiza: \nHabedoyy!! \nSemangat terus dalam menuntut ilmu yops:) \nTeu kedah cilok, duit na we hwehee,, canda gais');
+                alert('Maya: \nSelamat hari jadi adeew!! \nSemoga selalu menjadi ade yang ceria, jangan bosen jadi sahabat maya ya hihi:) \nKangen jejerewetan gais:D');
+                
+                var kondisi = confirm('SIAP MAIN!! seberapa pelit kamu??????');
+                if (kondisi == true) {
+                    var kondisi2 = confirm('Mau Telaktir teman kamu di saat hari bahagia mu? \njika ya tekan OK, jika tidak cancle');
+                    if (kondisi2 == true){
+                        
+                        var nilai = prompt('Mau telaktir apa nich?? (bakso / seblak / cilok /makan besar) \npilih salah satu dari makanan di atas ya:) \npenulisan huruf harus sama dengan daftar di atas:');
+                        
+                        switch(nilai){
+                            case "bakso":
+                            case "seblak":
+                            case "cilok":
+                                
+                                var nilai2 = parseInt(prompt('Berapa mangkuk ' + nilai + '? \nIsi dengan angka ya:)')); 
+                                if(nilai2 <= 5){
+                                    alert('Dikit amat ' + nilai2 + 'mangkok:(');
+                                    alert('ADE PELITTTTTTTT WHAHAHA');
+                                }else if(nilai2 >= 5) {
+                                    alert('MANTAPPPP, ADEEE MAH BAGEURRRR DA');
+                                }else{
+                                    alert('yang anda masukkan bukan angka');
+                                }
+                                break;
+                            case "makan besar":
+                                alert('ASEKKKKK MAKAN BESAR!!!');
+                                alert('MANTAPPPP, ADEEE MAH BAGEURRRR DA');
+                                break;
+                            default:
+                                alert('Makanan yang anda masukkan tidak terdaftar, atau penulisan huruf salah!!');
+                                break;
+
+                        }
+                    } else {
+                        alert('ANDA PELITTT SEKALIIII!!!!!!');
+                    }
+                }else{
+                    alert('AHHHH Payah NI di cancle:(');
+                }
+                
+            });
+        });
+    </script>
+</body>
+</html>
