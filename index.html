@@ -46,16 +46,6 @@
                     <span>A</span>
                     <span>Y</span>
                 </div>
-                <div class="row">
-                    <span>M</span>
-                    <span>A</span>
-                    <span>H</span>
-                    <span>D</span>
-                    <span>A</span>
-                    <span>E</span>
-                    <span>N</span>
-                    <span>A</span>
-                </div>
             </div>
         </div>
 
@@ -73,14 +63,11 @@
             $(".giftbox").click(function(){
                 // $(".giftbox").prop('hidden', true);
                 // $(".botton").prop('hidden', true);
-                alert('Rizki: \nHAPPY BIRTHDAY ADE!! \nSemoga menjadi umur yang berkah:) \nKurangin jejerewetanna de wkwk');
-                alert('Fahmi: \nBarakallah Fiumrik!! \nSukses terus de:) \nTong poho ah seblac acan mah:D');
-                alert('Saepul: \nSelamat ulang tahun Ade!! \nDoa terbaik de:) \nMakan-makan tuh hehe');
-                alert('Andika: \nHapibidi!! \nSemoga sehat teruss,, huuuu uuu:) \ncilok cilok atu de haha');
-                alert('Reiza: \nHabedoyy!! \nSemangat terus dalam menuntut ilmu yops:) \nTeu kedah cilok, duit na we hwehee,, canda gais');
-                alert('Maya: \nSelamat hari jadi adeew!! \nSemoga selalu menjadi ade yang ceria, jangan bosen jadi sahabat maya ya hihi:) \nKangen jejerewetan gais:D');
+                alert('Hi, aku Botnya Maya, ikuti panduanku ya:) ');
+                var nama = prompt('Ketikkan nama kamu di bawah ya!! \nlalu tekan OK');
+                alert('from Maya Ayu Andani \nTo ' + nama + ' \nHappy Birthday ' + nama + '🎉🎉!! \nSemoga selalu menjadi ' + nama + ' yang ceria, Sholeh/Sholehah, dan baik kesemua orang. jangan bosen jadi sahabat maya ya hihi:) \nSemangat terus dalam menuntut ilmu yops:D \nStay healthy🤍 Keep spirit💪 And keep smile🙂. \n Dan Maya tunggu lho traktirannya, hihi:D');
                 
-                var kondisi = confirm('SIAP MAIN!! seberapa pelit kamu??????');
+                var kondisi = confirm('SIAP MAIN!! seberapa BAIK/PELIT kamu??????');
                 if (kondisi == true) {
                     var kondisi2 = confirm('Mau Telaktir teman kamu di saat hari bahagia mu? \njika ya tekan OK, jika tidak cancle');
                     if (kondisi2 == true){
@@ -95,19 +82,19 @@
                                 var nilai2 = parseInt(prompt('Berapa mangkuk ' + nilai + '? \nIsi dengan angka ya:)')); 
                                 if(nilai2 <= 5){
                                     alert('Dikit amat ' + nilai2 + 'mangkok:(');
-                                    alert('ADE PELITTTTTTTT WHAHAHA');
+                                    alert(nama + ' PELITTTTTTTT WHAHAHA😆');
                                 }else if(nilai2 >= 5) {
-                                    alert('MANTAPPPP, ADEEE MAH BAGEURRRR DA');
+                                    alert('MANTAPPPP, '+ nama + 'BAIK BANGETT🤩');
                                 }else{
-                                    alert('yang anda masukkan bukan angka');
+                                    alert('yang anda masukkan bukan angka \ncoba lagi ya:)');
                                 }
                                 break;
                             case "makan besar":
                                 alert('ASEKKKKK MAKAN BESAR!!!');
-                                alert('MANTAPPPP, ADEEE MAH BAGEURRRR DA');
+                                alert('MANTAPPPP, '+ nama + 'BAIK BANGETT🤩');
                                 break;
                             default:
-                                alert('Makanan yang anda masukkan tidak terdaftar, atau penulisan huruf salah!!');
+                                alert('Makanan yang anda masukkan tidak terdaftar, atau penulisan huruf salah!! \ncoba lagi ya:)');
                                 break;
 
                         }
